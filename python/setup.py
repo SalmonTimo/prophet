@@ -4,7 +4,7 @@
 # LICENSE file in the root directory of this source tree.
 
 import os.path
-import os.system
+import os
 import pickle
 import platform
 import sys
