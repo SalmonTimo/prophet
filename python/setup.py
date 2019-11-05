@@ -112,6 +112,9 @@ class TestCommand(test_command):
 with open('requirements.txt', 'r') as f:
     install_requires = f.read().splitlines()
 
+import cmdstanpy
+cmdstanpy.install_cmdstan()
+    
 setup(
     name='fbprophet',
     version='0.5',
