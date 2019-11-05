@@ -4,7 +4,6 @@
 # LICENSE file in the root directory of this source tree.
 
 import os.path
-import os
 import pickle
 import platform
 import sys
@@ -113,8 +112,6 @@ class TestCommand(test_command):
 with open('requirements.txt', 'r') as f:
     install_requires = f.read().splitlines()
 
-os.system("install_cmdstan")
-    
 setup(
     name='fbprophet',
     version='0.5',
